@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Favicon Icon -->
+      <link rel="icon" href="../img/favicon.svg" />
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="../css/style.css" />
+      <!-- Tailwind CSS CDN File -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <title>PAKA</title>
+   </head>
+   <body>
+      <!-- Header + Search Section Start -->
+      <div
+         class="sm:min-h-96 !bg-no-repeat !bg-cover !bg-center"
+         style="background: url(../img/water-hero-bg.png)"
+      >
+         <!-- Header Section Start -->
+         <header class="sm:py-7 py-6">
+            <nav
+               class="flex items-center gap-5 justify-between max-w-7xl px-4 mx-auto"
+            >
+               <a href="#">
+                  <img src="../img/light-logo.svg" alt="Logo" />
+               </a>
+
+               <ul
+                  class="sm:flex hidden gap-6 items-center text-[var(--screen-bg)]"
+               >
+                  <li><a href="#" class="text-sm">Mountains</a></li>
+                  <li><a href="#" class="text-sm">Water</a></li>
+                  <li><a href="#" class="text-sm">Deserts</a></li>
+                  <li><a href="#" class="text-sm">Forests</a></li>
+                  <li><a href="#" class="text-sm">Contacts</a></li>
+               </ul>
+
+               <a href="#">
+                  <img
+                     src="../img/icon/ic-user-light.svg"
+                     alt="User Icon"
+                     class="sm:block hidden"
+                  />
+                  <img
+                     src="../img/icon/ic-toggle-light.svg"
+                     alt="Toggle Icon"
+                     class="sm:hidden block"
+                  />
+               </a>
+            </nav>
+         </header>
+         <!-- Header Section End -->
+
+         <div class="text-[var(--screen-bg)] text-center sm:my-16 mt-16">
+            <img
+               src="../img/icon/ic-water.svg"
+               alt="Water Img"
+               width="82"
+               class="mx-auto"
+            />
+            <h1 class="font-semibold text-4xl">Water</h1>
+         </div>
+
+         <!-- Search Filter Section Start -->
+         <section
+            class="max-w-7xl px-4 mx-auto sm:translate-y-10 translate-y-40"
+         >
+            <div class="bg-[var(--light-bg-color)] p-4 rounded-md">
+               <form class="grid sm:grid-cols-12 md:gap-6 gap-2">
+                  <div class="sm:col-span-10">
+                     <div class="grid sm:grid-cols-4 md:gap-6 gap-2">
+                        <input
+                           type="text"
+                           name="departure"
+                           id="departure"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)]"
+                           placeholder="Departure"
+                        />
+                        <input
+                           type="text"
+                           name="date"
+                           id="date"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)]"
+                           placeholder="Date"
+                        />
+
+                        <input
+                           type="text"
+                           name="adult"
+                           id="adult"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)]"
+                           placeholder="1 Adult"
+                        />
+
+                        <input
+                           type="text"
+                           name="type"
+                           id="type"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)]"
+                           placeholder="Type"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="sm:col-span-2">
+                     <button
+                        type="submit"
+                        class="bg-[var(--secondary-color)] text-white rounded-md h-12 px-2.5 w-full cursor-pointer"
+                     >
+                        Search
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <!-- Search Filter Section End -->
+      </div>
+      <!-- Header + Search Section End -->
+
+      <!-- Filter + Cards Section Start -->
+      <section class="relative">
+         <div class="max-w-7xl px-4 mx-auto sm:py-20 pt-52 pb-20">
+            <div class="grid md:grid-cols-12 gap-6 items-start">
+               <div
+                  class="lg:col-span-3 md:col-span-4 p-4 rounded-md bg-[var(--light-bg-color)] md:block hidden"
+               >
+                  <h6 class="text-lg font-semibold">Filter by:</h6>
+
+                  <div class="mt-3">
+                     <label for="stop" class="font-medium cursor-pointer"
+                        >Stop</label
+                     >
+                     <input
+                        type="text"
+                        name="stop"
+                        id="stop"
+                        class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)] mt-1.5"
+                        placeholder="0"
+                     />
+                  </div>
+
+                  <div class="mt-3">
+                     <label for="min" class="font-medium cursor-pointer"
+                        >Budget</label
+                     >
+                     <div class="flex items-center gap-2">
+                        <input
+                           type="text"
+                           name="min"
+                           id="min"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)] mt-1.5"
+                           placeholder="0"
+                        />
+                        <span>-</span>
+
+                        <input
+                           type="text"
+                           name="min"
+                           id="min"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)] mt-1.5"
+                           placeholder="10000+"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="mt-3">
+                     <label for="continent" class="font-medium cursor-pointer"
+                        >Continent</label
+                     >
+                     <input
+                        type="text"
+                        name="continent"
+                        id="continent"
+                        class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)] mt-1.5"
+                        placeholder="Any"
+                     />
+                  </div>
+
+                  <div class="mt-3">
+                     <label for="difficulty" class="font-medium cursor-pointer"
+                        >Difficulty</label
+                     >
+                     <input
+                        type="text"
+                        name="difficulty"
+                        id="difficulty"
+                        class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)] mt-1.5"
+                        placeholder="All"
+                     />
+                  </div>
+               </div>
+
+               <div class="lg:col-span-9 md:col-span-8">
+                  <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/1.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-water.svg"
+                              alt="Water Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Nazaré <br />
+                              Canyon
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/3.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-cactus.svg"
+                              alt="Cactus Icon"
+                              width="34"
+                           />
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Tree Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Petra and The Desert of Wadi Rum
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/2.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Forest Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Reforest <br />
+                              Iceland
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/7.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-mountain.svg"
+                              alt="Mountain Icon"
+                              width="34"
+                           />
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Tree Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4
+                              class="text-3xl font-semibold text-center w-10/12 mx-auto"
+                           >
+                              Meteora and the Land of the Gods
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/4.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-mountain.svg"
+                              alt="Mountain Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4
+                              class="text-3xl font-semibold text-center w-10/12 mx-auto"
+                           >
+                              Sanctuary of the Annapurnas
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/6.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-mountain.svg"
+                              alt="Mountain Icon"
+                              width="34"
+                           />
+
+                           <img
+                              src="../img/icon/ic-cactus.svg"
+                              alt="Cactus Icon"
+                              width="34"
+                           />
+
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Tree Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Mongolian Exploration
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/8.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Tree Icon"
+                              width="34"
+                           />
+
+                           <img
+                              src="../img/icon/ic-water.svg"
+                              alt="Water Icon"
+                              width="34"
+                           />
+
+                           <img
+                              src="../img/icon/ic-mountain.svg"
+                              alt="Mountain Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-28">
+                           <h4
+                              class="text-3xl font-semibold text-center w-10/12 mx-auto"
+                           >
+                              The Heart of Alaska
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/9.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-cactus.svg"
+                              alt="Cactus Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-28">
+                           <h4
+                              class="text-3xl font-semibold text-center w-10/12 mx-auto"
+                           >
+                              Namibian Desert
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/5.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-mountain.svg"
+                              alt="Mountain Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-28">
+                           <h4
+                              class="text-3xl font-semibold text-center w-10/12 mx-auto"
+                           >
+                              Mont Blanc
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/1.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-water.svg"
+                              alt="Water Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Nazaré <br />
+                              Canyon
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/3.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-cactus.svg"
+                              alt="Cactus Icon"
+                              width="34"
+                           />
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Tree Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Petra and The Desert of Wadi Rum
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+
+                     <div
+                        class="!bg-no-repeat !bg-cover !bg-center p-3 rounded-md text-[var(--screen-bg)] flex flex-col justify-between"
+                        style="background: url(../img/packs/2.png)"
+                     >
+                        <div class="flex items-center justify-center gap-3">
+                           <img
+                              src="../img/icon/ic-tree.svg"
+                              alt="Forest Icon"
+                              width="34"
+                           />
+                        </div>
+
+                        <div class="text-center my-16">
+                           <h4 class="text-3xl font-semibold text-center">
+                              Reforest <br />
+                              Iceland
+                           </h4>
+                           <p>11 to 15 April / 1760€</p>
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="border border-[var(--screen-bg)] text-[var(--light-bg-color)] rounded-md h-12 px-1.5 w-full cursor-pointer md:col-span-2"
+                        >
+                           Know More
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <img
+               src="../img/water-img.png"
+               alt="Water Img"
+               class="absolute bottom-0 left-0 -z-10"
+            />
+         </div>
+      </section>
+
+      <!-- Filter + Cards Section End -->
+
+      <!-- Footer Section Start -->
+      <footer class="bg-[var(--secondary-color)] pt-8">
+         <div
+            class="max-w-7xl mx-auto grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-10 gap-y-7 text-[var(--screen-bg)] pb-10 md:px-4"
+         >
+            <div
+               class="md:col-span-1 sm:col-span-3 col-span-2 md:block flex justify-center flex-col items-center md:border-b-0 border-b border-b-[var(--screen-bg)] md:pb-0 pb-7"
+            >
+               <a href="#" class="w-fit">
+                  <img src="../../img/light-logo.svg" alt="Logo" width="200" />
+               </a>
+
+               <div class="flex md:gap-4 gap-12 items-center md:mt-2 mt-8">
+                  <a href="#">
+                     <img
+                        src="../../img/icon/ic-insta.svg"
+                        alt="Instagram Icon"
+                     />
+                  </a>
+
+                  <a href="#">
+                     <img src="../../img/icon/ic-fb.svg" alt="Facebook Icon" />
+                  </a>
+
+                  <a href="#">
+                     <img
+                        src="../../img/icon/ic-twitter.svg"
+                        alt="Twitter Icon"
+                     />
+                  </a>
+               </div>
+            </div>
+
+            <div class="sm:col-span-1 col-span-2 md:ps-0 ps-4">
+               <div class="mb-3">
+                  <h6 class="font-semibold">Address</h6>
+                  <p class="text-xs">
+                     Centro Empresarial de Braga <br />
+                     Edifício B3 <br />
+                     4705-319 Ferreiros, Braga
+                  </p>
+               </div>
+
+               <div class="mb-3">
+                  <h6 class="font-semibold">Email</h6>
+                  <div class="-mt-1">
+                     <a href="mailto:geral@paka.pt" class="text-xs">
+                        geral@paka.pt
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <h6 class="font-semibold">Phone</h6>
+                  <div class="-mt-1">
+                     <a href="tel:(+351) 253 400 456" class="text-xs">
+                        (+351) 253 400 456
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="sm:ps-0 ps-4">
+               <div class="mb-3">
+                  <h6 class="font-semibold mb-2">Navigation</h6>
+                  <ul>
+                     <li class="mb-1">
+                        <a href="#">Home</a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#">Mountains</a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#">Water</a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#"> Deserts </a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#"> Forests </a>
+                     </li>
+                     <li>
+                        <a href="#"> Contacts</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="md:pe-0 pe-4">
+               <div class="mb-3">
+                  <h6 class="font-semibold mb-2">Navigation</h6>
+                  <ul>
+                     <li class="mb-1">
+                        <a href="#">Login</a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#">Sign Up</a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#"> Lost Password </a>
+                     </li>
+                     <li class="mb-1">
+                        <a href="#"> User Profile </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="bg-[var(--primary-color)] py-6">
+            <div
+               class="max-w-7xl px-4 mx-auto flex items-center gap-4 sm:justify-between justify-center sm:flex-row flex-col-reverse"
+            >
+               <p class="text-xs text-[var(--screen-bg)]">
+                  Copyright © 2025. All Rights Reserved.
+               </p>
+
+               <p class="text-xs text-[var(--screen-bg)]">Privacy Policy</p>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer Section End -->
+   </body>
+</html>
