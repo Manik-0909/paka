@@ -12,9 +12,10 @@
       <title>PAKA</title>
    </head>
    <body>
+      <!-- Header + Search Section Start -->
       <div
-         class="min-h-screen !bg-no-repeat !bg-cover !bg-center"
-         style="background: url(../img/404-bg.png)"
+         class="min-h-[750px] !bg-no-repeat !bg-cover !bg-center"
+         style="background: url(../img/home-hero-bg.png)"
       >
          <!-- Header Section Start -->
          <header class="sm:py-7 py-6 sticky top-0">
@@ -51,14 +52,39 @@
          </header>
          <!-- Header Section End -->
 
-         <div
-            class="page-not-found max-w-7xl px-4 mx-auto flex items-center justify-center text-[var(--screen-bg)]"
-         >
-            <div>
-               <h1 class="text-9xl font-black">404</h1>
-               <p class="text-5xl">Are you lost?</p>
+         <!-- Search Filter Section Start -->
+         <section class="max-w-7xl px-4 mx-auto">
+            <h4 class="text-3xl font-semibold text-[var(--screen-bg)] mb-3">
+               Search for your next adventure!
+            </h4>
+
+            <div class="bg-[var(--light-bg-color)] p-4 rounded-md">
+               <form class="grid grid-cols-12 gap-3">
+                  <div class="col-span-9">
+                     <div class="grid grid-cols-4 gap-6">
+                        <input
+                           type="email"
+                           name="email"
+                           id="email"
+                           class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full bg-[var(--screen-bg)]"
+                           placeholder="Email"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="col-span-3">
+                     <button
+                        type="submit"
+                        class="bg-[var(--secondary-color)] text-white rounded-md h-12 px-10 w-full cursor-pointer"
+                     >
+                        Search
+                     </button>
+                  </div>
+               </form>
             </div>
-         </div>
+         </section>
+         <!-- Search Filter Section End -->
       </div>
+      <!-- Header + Search Section End -->
    </body>
 </html>
