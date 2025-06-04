@@ -71,7 +71,7 @@
                <li>
                   <button
                      type="button"
-                     class="border border-[var(--secondary-color)] py-2 px-8 rounded-md rounded-e-none cursor-pointer bg-[var(--secondary-color)] text-white font-medium w-36"
+                     class="border border-[var(--primary-color)] rounded-md rounded-e-none py-2 px-8 cursor-pointer font-medium w-36"
                   >
                      Packs
                   </button>
@@ -89,7 +89,7 @@
                <li>
                   <button
                      type="button"
-                     class="border border-[var(--primary-color)] py-2 px-8 cursor-pointer font-medium w-36"
+                     class="border border-[var(--secondary-color)] py-2 px-8 cursor-pointer bg-[var(--secondary-color)] text-white font-medium w-36"
                   >
                      Flights
                   </button>
@@ -128,53 +128,58 @@
                   <tr class="text-[var(--screen-bg)]">
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black rounded-tl-md"
+                           class="text-left bg-black px-4 py-5 border border-black rounded-tl-md text-nowrap"
                         >
-                           Name
+                           Departure - Location
+                        </div>
+                     </th>
+
+                     <th scope="col">
+                        <div
+                           class="text-left bg-black px-4 py-5 border border-black text-nowrap"
+                        >
+                           Departure - Date
                         </div>
                      </th>
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black"
+                           class="text-left bg-black px-4 py-5 border border-black text-nowrap"
+                        >
+                           Departure - Time
+                        </div>
+                     </th>
+                     <th scope="col">
+                        <div
+                           class="bg-black text-left px-4 py-5 border border-black text-nowrap"
+                        >
+                           Arrival - Location
+                        </div>
+                     </th>
+
+                     <th scope="col">
+                        <div
+                           class="bg-black text-left px-4 py-5 border border-black text-nowrap"
+                        >
+                           Arrival - Date
+                        </div>
+                     </th>
+
+                     <th scope="col">
+                        <div
+                           class="bg-black text-left px-4 py-5 border border-black text-nowrap"
+                        >
+                           Arrival - Time
+                        </div>
+                     </th>
+
+                     <th scope="col">
+                        <div
+                           class="bg-black text-left px-4 py-5 border border-black text-nowrap"
                         >
                            Price
                         </div>
                      </th>
-                     <th scope="col">
-                        <div
-                           class="text-left bg-black px-4 py-5 border border-black"
-                        >
-                           Categories
-                        </div>
-                     </th>
-                     <th scope="col">
-                        <div
-                           class="text-left bg-black px-4 py-5 border border-black"
-                        >
-                           Description
-                        </div>
-                     </th>
-                     <th scope="col">
-                        <div
-                           class="text-left bg-black px-4 py-5 border border-black"
-                        >
-                           Date
-                        </div>
-                     </th>
-                     <th scope="col">
-                        <div
-                           class="bg-black text-left px-4 py-5 border border-black"
-                        >
-                           Activities
-                        </div>
-                     </th>
-                     <th scope="col">
-                        <div
-                           class="bg-black text-left px-4 py-5 border border-black"
-                        >
-                           Images
-                        </div>
-                     </th>
+
                      <th scope="col">
                         <div
                            class="bg-black text-left px-4 py-5 border border-black rounded-tr-md text-black"
@@ -190,7 +195,7 @@
                         <div
                            class="border-s p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Petra and the Desert of Wadi Rum
+                           Porto
                         </div>
                      </td>
 
@@ -198,7 +203,15 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           04/05/2025
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           23:30
                         </div>
                      </td>
 
@@ -206,18 +219,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td class="bg-[var(--light-bg-color)]">
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div
-                              class="p-4 bg-[var(--light-bg-color)] truncate w-36"
-                           >
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           Rome
                         </div>
                      </td>
 
@@ -225,7 +227,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
+                           04/05/2025
                         </div>
                      </td>
 
@@ -233,15 +235,14 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           03:00
                         </div>
                      </td>
-
                      <td>
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           210€
                         </div>
                      </td>
 
@@ -272,7 +273,7 @@
                         <div
                            class="border-s p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Petra and the Desert of Wadi Rum
+                           Porto
                         </div>
                      </td>
 
@@ -280,7 +281,15 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           04/05/2025
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           23:30
                         </div>
                      </td>
 
@@ -288,16 +297,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td>
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div class="p-4 truncate w-36">
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           Rome
                         </div>
                      </td>
 
@@ -305,7 +305,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
+                           04/05/2025
                         </div>
                      </td>
 
@@ -313,7 +313,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           03:00
                         </div>
                      </td>
 
@@ -321,7 +321,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           210€
                         </div>
                      </td>
 
@@ -352,7 +352,7 @@
                         <div
                            class="border-s p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Petra and the Desert of Wadi Rum
+                           Porto
                         </div>
                      </td>
 
@@ -360,7 +360,15 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           04/05/2025
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           23:30
                         </div>
                      </td>
 
@@ -368,18 +376,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td class="bg-[var(--light-bg-color)]">
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div
-                              class="p-4 bg-[var(--light-bg-color)] truncate w-36"
-                           >
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           Rome
                         </div>
                      </td>
 
@@ -387,7 +384,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
+                           04/05/2025
                         </div>
                      </td>
 
@@ -395,15 +392,14 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           03:00
                         </div>
                      </td>
-
                      <td>
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           210€
                         </div>
                      </td>
 
@@ -434,7 +430,7 @@
                         <div
                            class="border-s p-4 text-nowrap border-b border-b-[var(--primary-color)] rounded-bl-md"
                         >
-                           Petra and the Desert of Wadi Rum
+                           Porto
                         </div>
                      </td>
 
@@ -442,7 +438,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           04/05/2025
                         </div>
                      </td>
 
@@ -450,16 +446,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td>
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div class="p-4 truncate w-36">
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           23:30
                         </div>
                      </td>
 
@@ -467,7 +454,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
+                           Rome
                         </div>
                      </td>
 
@@ -475,7 +462,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           04/05/2025
                         </div>
                      </td>
 
@@ -483,7 +470,15 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
+                           03:00
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
+                        >
+                           210€
                         </div>
                      </td>
 

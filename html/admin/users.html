@@ -71,7 +71,7 @@
                <li>
                   <button
                      type="button"
-                     class="border border-[var(--secondary-color)] py-2 px-8 rounded-md rounded-e-none cursor-pointer bg-[var(--secondary-color)] text-white font-medium w-36"
+                     class="border border-[var(--primary-color)] rounded-md rounded-e-none py-2 px-8 cursor-pointer font-medium w-36"
                   >
                      Packs
                   </button>
@@ -98,7 +98,7 @@
                <li>
                   <button
                      type="button"
-                     class="border border-[var(--primary-color)] py-2 px-8 cursor-pointer font-medium w-36"
+                     class="border border-[var(--secondary-color)] py-2 px-8 cursor-pointer bg-[var(--secondary-color)] text-white font-medium w-36"
                   >
                      Users
                   </button>
@@ -128,53 +128,42 @@
                   <tr class="text-[var(--screen-bg)]">
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black rounded-tl-md"
+                           class="text-left bg-black px-4 py-5 border border-black rounded-tl-md text-nowrap"
                         >
                            Name
                         </div>
                      </th>
+
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black"
+                           class="text-left bg-black px-4 py-5 border border-black text-nowrap"
                         >
-                           Price
+                           Email
                         </div>
                      </th>
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black"
+                           class="text-left bg-black px-4 py-5 border border-black text-nowrap"
                         >
-                           Categories
+                           Favourites Count
                         </div>
                      </th>
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black"
+                           class="bg-black text-left px-4 py-5 border border-black text-nowrap"
                         >
-                           Description
+                           Status
                         </div>
                      </th>
+
                      <th scope="col">
                         <div
-                           class="text-left bg-black px-4 py-5 border border-black"
+                           class="bg-black text-left px-4 py-5 border border-black text-nowrap"
                         >
-                           Date
+                           Last Access
                         </div>
                      </th>
-                     <th scope="col">
-                        <div
-                           class="bg-black text-left px-4 py-5 border border-black"
-                        >
-                           Activities
-                        </div>
-                     </th>
-                     <th scope="col">
-                        <div
-                           class="bg-black text-left px-4 py-5 border border-black"
-                        >
-                           Images
-                        </div>
-                     </th>
+
                      <th scope="col">
                         <div
                            class="bg-black text-left px-4 py-5 border border-black rounded-tr-md text-black"
@@ -190,7 +179,7 @@
                         <div
                            class="border-s p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Petra and the Desert of Wadi Rum
+                           João Santos
                         </div>
                      </td>
 
@@ -198,7 +187,15 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           example@email.com
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           4
                         </div>
                      </td>
 
@@ -206,18 +203,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td class="bg-[var(--light-bg-color)]">
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div
-                              class="p-4 bg-[var(--light-bg-color)] truncate w-36"
-                           >
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           Active
                         </div>
                      </td>
 
@@ -225,23 +211,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
+                           04/05/2025 13:30
                         </div>
                      </td>
 
@@ -272,7 +242,7 @@
                         <div
                            class="border-s p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Petra and the Desert of Wadi Rum
+                           João Santos
                         </div>
                      </td>
 
@@ -280,7 +250,15 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           example@email.com
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           4
                         </div>
                      </td>
 
@@ -288,16 +266,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td>
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div class="p-4 truncate w-36">
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           Active
                         </div>
                      </td>
 
@@ -305,23 +274,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
+                           04/05/2025 13:30
                         </div>
                      </td>
 
@@ -352,7 +305,7 @@
                         <div
                            class="border-s p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Petra and the Desert of Wadi Rum
+                           João Santos
                         </div>
                      </td>
 
@@ -360,7 +313,23 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           example@email.com
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           4
+                        </div>
+                     </td>
+
+                     <td>
+                        <div
+                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)] truncate"
+                        >
+                           Deactived
                         </div>
                      </td>
 
@@ -368,42 +337,7 @@
                         <div
                            class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td class="bg-[var(--light-bg-color)]">
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div
-                              class="p-4 bg-[var(--light-bg-color)] truncate w-36"
-                           >
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           03/05/2025 - 06/05/2025
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 bg-[var(--light-bg-color)] text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
+                           04/05/2025 13:30
                         </div>
                      </td>
 
@@ -434,7 +368,7 @@
                         <div
                            class="border-s p-4 text-nowrap border-b border-b-[var(--primary-color)] rounded-bl-md"
                         >
-                           Petra and the Desert of Wadi Rum
+                           João Santos
                         </div>
                      </td>
 
@@ -442,7 +376,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           1690€
+                           example@email.com
                         </div>
                      </td>
 
@@ -450,16 +384,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           Desert
-                        </div>
-                     </td>
-
-                     <td>
-                        <div class="border-b border-b-[var(--primary-color)]">
-                           <div class="p-4 truncate w-36">
-                              Lorem ipsum dolor sit amet consectetur,
-                              adipisicing elit. Totam, cupiditate.
-                           </div>
+                           4
                         </div>
                      </td>
 
@@ -467,7 +392,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           03/05/2025 - 06/05/2025
+                           Deactived
                         </div>
                      </td>
 
@@ -475,15 +400,7 @@
                         <div
                            class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
                         >
-                           View
-                        </div>
-                     </td>
-
-                     <td>
-                        <div
-                           class="p-4 text-nowrap border-b border-b-[var(--primary-color)]"
-                        >
-                           View
+                           04/05/2025 13:30
                         </div>
                      </td>
 

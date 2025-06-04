@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Favicon Icon -->
+      <link rel="icon" href="../../img/favicon.svg" />
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="../../css/style.css" />
+      <!-- Tailwind CSS CDN File -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <title>PAKA</title>
+   </head>
+   <body>
+      <div
+         class="relative min-h-screen w-full bg-[var(--primary-color)]/75 flex items-center justify-center"
+      >
+         <!-- New Categories Modal Start -->
+         <section class="px-4 flex items-center justify-center">
+            <div class="bg-white py-8 px-6 rounded-md max-w-[410px]">
+               <!-- Modal Header -->
+               <div class="flex items-center gap-3 justify-between">
+                  <h4 class="text-3xl font-semibold">New Category</h4>
+
+                  <button type="button">
+                     <img
+                        src="../../img/icon/ic-close.svg"
+                        alt="Modal Close Icon"
+                     />
+                  </button>
+               </div>
+
+               <!-- Modal Body -->
+               <div class="mt-8">
+                  <form>
+                     <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm w-full"
+                        placeholder="Name"
+                     />
+
+                     <input
+                        type="number"
+                        name="packsNo"
+                        id="packsNo"
+                        class="border rounded-md h-12 p-3.5 focus-within:outline-0 text-sm mt-2 w-full"
+                        placeholder="No of Packs"
+                     />
+
+                     <textarea
+                        name="description"
+                        class="border rounded-md p-3.5 focus-within:outline-0 text-sm mt-2 w-full resize-none"
+                        id="description"
+                        rows="5"
+                        placeholder="Description"
+                     ></textarea>
+
+                     <div
+                        class="border rounded-md focus-within:outline-0 text-sm mt-2 w-full relative"
+                     >
+                        <img
+                           src="../../img/upload-img.png"
+                           alt="Upload Image"
+                           class="rounded-md relative"
+                        />
+                        <input
+                           type="file"
+                           name="upload"
+                           id="upload"
+                           class="h-32 absolute inset-0 p-4 text-transparent"
+                        />
+                     </div>
+                  </form>
+               </div>
+
+               <!-- Modal Footer -->
+               <div class="mt-4">
+                  <button
+                     type="submit"
+                     class="bg-[var(--secondary-color)] text-white rounded-md h-12 px-10 w-full cursor-pointer"
+                  >
+                     Add Category
+                  </button>
+               </div>
+            </div>
+         </section>
+         <!-- New Categories Modal End -->
+      </div>
+   </body>
+</html>
